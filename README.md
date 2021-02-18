@@ -6,7 +6,7 @@
 
 ## Setup
 
-### Config file
+### 1. Config file
 
 #### General information about the config file
 

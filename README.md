@@ -81,7 +81,7 @@ Command to **create** the Genesis block together with all the necessary files:
 $ geth --datadir ./privatechain-data init privatechain.json
 ```
 
-When this command is done a folder called "myownchain-data" will be created.
+When this command is done a folder called "privatechain-data" will be created.
 
 In this folder you can find two more folders called: `geth` & `keystore`.
 

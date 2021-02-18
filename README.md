@@ -37,25 +37,85 @@ $ puppeth
 > privatechain
 ```
 
-3. Now you will get a menu with several options. Pick the one "Configure new genesis" by typing 2.
+3. Now you will get a menu with several options. Pick the one "Configure new genesis".
+
+```
+What would you like to do? (default = stats)
+ 1. Show network stats
+ 2. Configure new genesis
+ 3. Track new remote server
+ 4. Deploy network components
+> 2
+```
 
 4. Now you get the option to create one from scratch or import one which is already made. We will opt to create a new one. Pick "Create new genesis from scratch".
 
+```
+What would you like to do? (default = create)
+ 1. Create new genesis from scratch
+ 2. Import already existing genesis
+> 1
+```
+
 5. In this step you will get to choose which consensus engine you would like to use. This is free to choose but in our case we will go with "Ethash - proof of work".
+
+```
+Which consensus engine to use? (default = clique)
+ 1. Ethash - proof-of-work
+ 2. Clique - proof-of-authority
+> 1
+```
 
 6. Next puppeth will ask you which accounts you would like to pre-fund. There is a chance that puppeth has already written `0x`, you can leave it like that and just press enter.
 
+```
+Which accounts should be pre-funded? (advisable at least one)
+> 0x
+```
+
 7. After that puppeth will ask you if you want the precompile-addresses to be pre-funded with 1 Wei. Just press enter to continue.
+
+```
+Should the precompile-addresses (0x1 .. 0xff) be pre-funded with 1 wei? (advisable yes)
+>
+```
 
 8. Next up it will ask you for a chain/network id. What is important here is that we use a chain/network id that is not already in use by the public Blockchains. [Here](https://besu.hyperledger.org/en/stable/Concepts/NetworkID-And-ChainID/) you can find a list of all the chain/network ids that are already taken. For example 7979 or 5222 are valid for a private Blockchain.
 
+```
+Specify your chain/network ID if you want an explicit one (default = random)
+> 5222
+```
+
 Now we are done with configuring the Genesis block. The last thing we need to do is exporting this configuration.
 
-9. If you are finished with the config you should now see a menu with almost the same options as in the beginning. Choose the option "Manage existing genesis" by typing 2.
+9. If you are finished with the config you should now see a menu with almost the same options as in the beginning. Choose the option "Manage existing genesis".
+
+```
+What would you like to do? (default = stats)
+ 1. Show network stats
+ 2. Manage existing genesis
+ 3. Track new remote server
+ 4. Deploy network components
+> 2
+```
 
 10. Here you will have to choose "Export genesis configurations".
 
+```
+ 1. Modify existing configurations
+ 2. Export genesis configurations
+ 3. Remove genesis configuration
+> 2
+```
+
 11. Right now you will be prompted where you want to save these files. In order to save the files you will need to specify a path or you can leave it blank if you want to save it in the current directory.
+
+```
+Which folder to save the genesis specs into? (default = current)
+  Will create privatechain.json, privatechain-aleth.json, privatechain-harmony.json, privatechain-parity.json
+>
+```
 
 12. After this the files should be created and you can quit puppeth.
 

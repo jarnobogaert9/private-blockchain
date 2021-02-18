@@ -61,7 +61,7 @@ Now we are done with configuring the Genesis block. The last thing we need to do
 
 ### 2. Create the Genesis block
 
-You will notice that we have several files now. We will use the one that has just the network name in it. For example if you have entered "myownchain" when Puppeth asked for a network name then you wille see different files in your directory containing myownchain in the name of the files. We will use this one `'privatechain.json'`.
+You will notice that we have several files now. We will use the one that has just the network name in it. For example if you have entered "privatechain" when Puppeth asked for a network name then you wil see different files in your directory containing privatechain in the name of the files. We will use this one `'privatechain.json'`.
 
 > Notice that if you entered something else when Puppeth asked for this, that you use the name that you specified before.
 
@@ -74,6 +74,8 @@ Please specify a network name to administer (no spaces, hyphens or capital lette
 ```
 
 In this case you will need to use `'myprivateblockchain.json'`.
+
+> Note that we do not use myprivateblockchain further in the documentation but **privatechain**. This was just an example.
 
 Command to **create** the Genesis block together with all the necessary files:
 

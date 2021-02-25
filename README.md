@@ -117,7 +117,7 @@ Which folder to save the genesis specs into? (default = current)
 >
 ```
 
-12. After this the files should be created and you can quit puppeth.
+12. After this the files should be created and you can quit puppeth. (In `'geth-node/config'` you can have a look at an example of those files.)
 
 ### 2. Create the Genesis block
 
@@ -148,6 +148,8 @@ When this command is done a folder called "privatechain-data" will be created.
 In this folder you can find two more folders called: `geth` & `keystore`.
 
 `Geth` will containt all the blockchain data and `keystore` all the keys.
+
+> In `'geth-node/data'` you have an example of the `'privatechain-data'` folder and the `'privatechain.json'` file. (The reason this folder and file is in a separate `'data'` folder is that it is easier to map this folder into a Docker container.)
 
 ### 3. Create accounts in our Blockchain
 

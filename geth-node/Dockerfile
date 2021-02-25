@@ -38,17 +38,3 @@ ENV PATH="${PATH}:/app/go-ethereum/build/bin"
 # ----- COPY SHELL SCRIPT & GIVE RIGHTS TO EXECUTE IT -----
 COPY run.sh .
 RUN chmod +x ./run.sh
-
-
-
-
-# RUN geth init --datadir ./data privatechain.json
-
-# ENTRYPOINT [ "geth init --datadir ./data privatechain.json", "&&" ]
-
-# ENTRYPOINT [ "bash", "./run.sh", "data", "privatechain" ]
-
-# ----------------------------------------- not used just to remember
-# CMD geth init --datadir ./data privatechain.json && geth --networkid 5333 --datadir ./data --nodiscover --http --http.port "8545" --port "30303" --http.corsdomain "*" --http.addr "0.0.0.0" --http.api="eth,net,personal,web3,debug,admin,miner"
-
-# CMD geth --networkid 5333 --datadir ./data --nodiscover --http --http.port "8545" --port "30303" --http.corsdomain "*" --http.addr "0.0.0.0" --http.api="eth,net,personal,web3,debug,admin,miner"

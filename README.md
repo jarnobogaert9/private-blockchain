@@ -1,5 +1,15 @@
 # Setup a Private Blockchain
 
+## Table of contents:
+
+[Run a geth node on a physical machine](#Run-a-geth-node-on-a-physical-machine)
+
+[Run a geth node inside Docker](#Run-a-geth-node-inside-Docker)
+
+# Run a geth node on a physical machine
+
+In this section we will setup a Geth node by using a geth installation that is installed on our machine.
+
 ## Prerequisites
 
 - Geth installed together with the dev-tools. [Installation](https://geth.ethereum.org/docs/install-and-build/installing-geth)
@@ -198,3 +208,5 @@ This is the command to run your node and immediately start mining:
 ```
 $ geth --networkid 5333 --mine --miner.threads 1 --datadir "./privatechain-data" --nodiscover --http --http.port "8545" --port "30303" --http.corsdomain "*" --http.api="db,eth,net,personal,web3,debug,admin,miner" --unlock "address you copied" --password ./pwd.sec --allow-insecure-unlock
 ```
+
+# Run a geth node inside Docker

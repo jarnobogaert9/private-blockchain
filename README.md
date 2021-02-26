@@ -231,7 +231,7 @@ $ docker-compose up
 
 Now you should have a private Geth node running.
 
-In the `'docker-compose.yml'` file you can see that there are some arguments passed to the `'run.sh'` script. Here you can change the name of the folder where the data will be stored, the name of the config file, the ports on which the services are running & the chainID number.
+In the `'geth-node/docker-compose.yml'` file you can see that there are some arguments passed to the `'run.sh'` script. Here you can change the name of the folder where the data will be stored, the name of the config file, the ports on which the services are running & the chainID number.
 
 > The chainID number can be found in the config file, in our case here `'geth-node/data/privatechain.json'`
 

@@ -13,4 +13,5 @@ services:
       - "30303:30303"
     volumes:
       - ./data:/app/data
-    command: bash run.sh privatechain-data privatechain
+    # arg1: datafolder, arg2: config file, arg3: http port, arg4: port for peers, arg5: network/chain ID
+    command: bash run.sh privatechain-data privatechain 8545 30303 9999

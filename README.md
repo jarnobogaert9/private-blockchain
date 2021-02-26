@@ -217,7 +217,7 @@ In order to run a private Blockchain we need to describe how our Genesis block w
 
 An example of this can be found in `'example/genesis.json'`
 
-We will use `'geth-node/data/privatechian.json'` for our Docker container.
+We will use `'geth-node/data/privatechain.json'` for our Docker container.
 
 This config file is slightly modified compared to the one in the `'example'` folder. The only real difference is the difficulty.
 
@@ -233,7 +233,7 @@ Now you should have a private Geth node running.
 
 In the `'docker-compose.yml'` file you can see that there are some arguments passed to the `'run.sh'` script. Here you can change the name of the folder where the data will be stored, the name of the config file, the ports on which the services are running & the chainID number.
 
-> The chainID number can be found in the config file, in our case here `'geth-node/data/privatechian.json'`
+> The chainID number can be found in the config file, in our case here `'geth-node/data/privatechain.json'`
 
 > Make sure that when you change the ports that you both change them in the `'- command:'` & `'- ports:'` directive in this docker-compose file.
 

@@ -1,4 +1,4 @@
-echo "Datafolder: ./$1/"
+echo "Data folder: ./$1/"
 echo "Config file: ./$2.json"
 echo "http port: $3"
 echo "port: $4"

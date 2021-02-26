@@ -33,8 +33,6 @@ RUN cd go-ethereum && make geth
 # Add geth to environment variables
 ENV PATH="${PATH}:/app/go-ethereum/build/bin"
 
-# COPY privatechain.json .
-
 # ----- COPY SHELL SCRIPT & GIVE RIGHTS TO EXECUTE IT -----
 COPY run.sh .
 RUN chmod +x ./run.sh

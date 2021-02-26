@@ -9,6 +9,7 @@ services:
         - gethversion=v1.9.25
         - gohost=linux-amd64.tar.gz
     ports:
+      # Make sure that the ports match the ones you pass to the run.sh script
       - "8545:8545"
       - "30303:30303"
     volumes:

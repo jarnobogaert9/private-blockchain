@@ -13,4 +13,4 @@ echo "========================
     Starting node... 
 ========================"
 
-geth --networkid $5 --datadir ./data/$1 --nodiscover --http --http.port $3 --port $4 --http.corsdomain "*" --http.addr "0.0.0.0" --http.api="eth,net,personal,web3,debug,admin,miner" --ipcdisable --gcmode archive
+geth --networkid $5 --datadir ./data/$1 --nodiscover --http --http.port $3 --port $4 --http.corsdomain "*" --http.addr "0.0.0.0" --http.api="eth,net,personal,web3,debug,admin,miner" --ipcdisable --gcmode archive --allow-insecure-unlock

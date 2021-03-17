@@ -12,6 +12,7 @@ services:
       # Make sure that the ports match the ones you pass to the run.sh script
       - "8545:8545"
       - "30303:30303"
+      - "30303:30303/udp"
     volumes:
       - ./data:/app/data
     # arg1: data folder, arg2: config file, arg3: http port, arg4: port for peers, arg5: network/chain ID

@@ -1,0 +1,3 @@
+geth --datadir ./privatechain-data init privatechain.json
+
+geth --networkid 9999 --datadir ./data-foler/ --nodiscover --http --http.port 8545 --port 30303 --http.corsdomain "*" --http.api="eth,net,personal,web3,debug,admin,miner"

@@ -1,3 +1,14 @@
 geth --datadir ./privatechain-data init privatechain.json
 
 geth --networkid 9999 --datadir ./data-folder/ --nodiscover --http --http.port 8545 --port 30303 --http.corsdomain "*" --http.api="eth,net,personal,web3,debug,admin,miner"
+
+
+geth attach http://192.168.0.189:8545
+
+personal.unlockAccount('0xd15c454ca9a89009214e099db8f2d2b1e25dc9e1','1234',0)
+
+personal
+
+miner.start(2)
+
+miner.stop()
